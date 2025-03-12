@@ -4,7 +4,7 @@ import RequestTutor from "./request.model"
 
 const createRequest = async (req: Request, res: Response) => {
   try {
-    const { tutorId, userEmail } = req.body;
+    const { userEmail } = req.body;
     // console.log(payload,"paylod")
 
     const existingRequest = await RequestTutor.findOne({ userEmail });
