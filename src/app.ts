@@ -13,7 +13,7 @@ import router from './routes';
 const app = express()
 // middleware
 app.use(express.json())
-app.use(cors({ origin: ["http://localhost:3000", "https://tutor-link-client.vercel.app/"], credentials: true }));
+app.use(cors({ origin: ["https://tutor-link-delta.vercel.app", "http://localhost:3000", "https://tutor-link-client.vercel.app"], credentials: true }));
 // router 
 app.use('/api', router);
 // app.use('/api/user', userRouter)
